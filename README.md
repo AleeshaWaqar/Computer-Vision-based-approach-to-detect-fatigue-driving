@@ -98,7 +98,7 @@ This project implements a non-invasive fatigue detection system that monitors dr
 Train the fatigue detection model:
 ### 1. Inference Mode (Desktop/Development)
 ### 2. Real-time Detection (Jetson Nano)
-Run real-time fatigue detection with camera:
+Run real-time fatigue detection with camera
 
 ### 3. Camera Interfacing
 With CSI camera on Jetson Nano or USB webcam
@@ -116,7 +116,8 @@ The system is trained on publicly available facial fatigue datasets:
 - Driver drowsiness detection datasets
 - Facial expression databases
 - Custom collected video sequences
-
+-link1 : https://www.kaggle.com/datasets/kondapuramabhiteja/closed-vs-open-eyes
+-likn2 : https://www.kaggle.com/datasets/davidvazquezcic/yawn-dataset
 ## Troubleshooting
 
 ### Common Issues

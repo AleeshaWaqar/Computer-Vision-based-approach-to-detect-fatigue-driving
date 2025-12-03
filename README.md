@@ -96,17 +96,17 @@ This project implements a non-invasive fatigue detection system that monitors dr
 ### Training Mode
 
 Train the fatigue detection model:
-### Inference Mode (Desktop/Development)
-### Real-time Detection (Jetson Nano)
+### 1. Inference Mode (Desktop/Development)
+### 2. Real-time Detection (Jetson Nano)
 Run real-time fatigue detection with camera:
 
-### Camera Interfacing
+### 3. Camera Interfacing
 With CSI camera on Jetson Nano or USB webcam
 
-### 3. Feature Classification (MobileNetV2)
+### 4. Feature Classification (MobileNetV2)
 Classifies eye and mouth states using optimized MobileNetV2.
 
-### 4. Multi-Index Fusion
+### 5. Multi-Index Fusion
 Combines ECR, MOR, and HNFR for comprehensive fatigue assessment.
 
 ## Dataset

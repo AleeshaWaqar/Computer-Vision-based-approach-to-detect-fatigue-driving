@@ -56,12 +56,8 @@ This project implements a non-invasive fatigue detection system that monitors dr
 
 ### 5. Clone Repository
 
-## Project Structure
- fatigue-detection/  
-│  
-├── README.md  
-├── requirements.txt  
-│  
+## Project Structure 
+├── README.md   
 ├── DOC/  
 │   ├── A_Survey_on_State-of-the-Art_Drowsiness_Detection.pdf   
 │   ├── Driver_Fatigue_Detection_System.pdf  

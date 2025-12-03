@@ -18,11 +18,11 @@ This project implements a non-invasive fatigue detection system that monitors dr
 
 ## Team Members
 
-| Name | CMS ID | Role | Email |
-|------|--------|------|-------|
-| Haida Asif | 411800 | Simulation & Algorithms | hasif.bee22seecs@seecs.edu.pk |
-| Aleesha Waqar | 417349 | Research & Development | awaqar.bee22seecs@seecs.edu.pk |
-| Ayesha Nahman | 424154 | Embedded Systems | anahman.bee22seecs@seecs.edu.pk |
+| Name   | Role | Email |
+|------ -|------|-------|
+| Haida Asif   | Simulation & Algorithms | hasif.bee22seecs@seecs.edu.pk |
+| Aleesha Waqar  | Research & Development | awaqar.bee22seecs@seecs.edu.pk |
+| Ayesha Nahman  | Embedded Systems | anahman.bee22seecs@seecs.edu.pk |
 
 **Course:** CS-477 Computer Vision (Fall 2025)  
 **Instructor:** Dr. Tauseef ur Rehman  

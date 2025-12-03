@@ -34,7 +34,7 @@ This project implements a non-invasive fatigue detection system that monitors dr
 
 - **Development Platform:** NVIDIA Jetson Nano (4GB recommended)
 - **Camera:** CSI camera module or USB webcam
-- **Storage:** Minimum 128GB microSD card
+- **Storage:** 128GB USB
 - **Power Supply:** 5V 4A power adapter
 
 ### Software Requirements

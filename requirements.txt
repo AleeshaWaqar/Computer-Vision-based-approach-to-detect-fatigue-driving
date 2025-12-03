@@ -1,0 +1,10 @@
+tensorflow==2.8.0
+opencv-python==4.5.5.64
+numpy==1.22.3
+mtcnn==0.1.1
+scipy==1.8.0
+imutils==0.5.4
+keras==2.8.0
+pytest==7.2.0
+pytest-cov==4.0.0
+flake8==6.0.0

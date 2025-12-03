@@ -47,13 +47,12 @@ This project implements a non-invasive fatigue detection system that monitors dr
 
 ## Installation
 
-**## 1. Setup NVIDIA Jetson Nano
-Install JetPack SDK on Jetson Nano
-## 2. Install System Dependencies
-## 3. Install Python Dependencies
-## 4. Install MTCNN for face detection
-## 5. Install Dlib for facial landmark detection
-## 6. Install MobileNetV2 dependencies**
+<sub>1. Setup NVIDIA Jetson Nano - Install JetPack SDK on Jetson Nano</sub>
+<sub>2. Install System Dependencies</sub>
+<sub>3. Install Python Dependencies</sub>
+<sub>4. Install MTCNN for face detection</sub>
+<sub>5. Install Dlib for facial landmark detection</sub>
+<sub>6. Install MobileNetV2 dependencies</sub>
 
 ### 5. Clone Repository
 

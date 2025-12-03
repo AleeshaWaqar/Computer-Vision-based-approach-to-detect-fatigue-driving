@@ -1,3 +1,5 @@
+![CI Tests](https://github.com/AleeshaWaqar/Computer-Vision-based-approach-to-detect-fatigue-driving/workflows/Fatigue%20Detection%20CI/badge.svg)
+
 # Computer-Vision-based Approach to Detect Fatigue Driving
 
 A real-time driver fatigue detection system implemented on NVIDIA Jetson Nano using deep learning and computer vision techniques.

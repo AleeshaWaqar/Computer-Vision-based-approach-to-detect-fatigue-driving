@@ -58,7 +58,7 @@ Install JetPack SDK on Jetson Nano
 ### 5. Clone Repository
 
 ## Project Structure
-fatigue-detection/
+ fatigue-detection/
 │
 ├── README.md
 ├── requirements.txt
@@ -128,10 +128,10 @@ The system is trained on publicly available facial fatigue datasets:
 
 ### Common Issues
 
-**Issue 1: CUDA Out of Memory**
-**Issue 2: Camera Not Detected**
-**Issue 3: Slow Inference Speed**
-**Issue 4: Low Detection Accuracy**
+**Issue 1: CUDA Out of Memory**  
+**Issue 2: Camera Not Detected**  
+**Issue 3: Slow Inference Speed**  
+**Issue 4: Low Detection Accuracy**  
 
 ## Model Optimization
 Convert trained model to TensorRT for faster inference 

@@ -116,8 +116,8 @@ The system is trained on publicly available facial fatigue datasets:
 - Driver drowsiness detection datasets
 - Facial expression databases
 - Custom collected video sequences
--link1 : https://www.kaggle.com/datasets/kondapuramabhiteja/closed-vs-open-eyes
--likn2 : https://www.kaggle.com/datasets/davidvazquezcic/yawn-dataset
+- link1 : https://www.kaggle.com/datasets/kondapuramabhiteja/closed-vs-open-eyes  
+- link2 : https://www.kaggle.com/datasets/davidvazquezcic/yawn-dataset  
 ## Troubleshooting
 
 ### Common Issues

@@ -51,9 +51,9 @@ This project implements a non-invasive fatigue detection system that monitors dr
 Install JetPack SDK on Jetson Nano
 ## 2. Install System Dependencies
 ## 3. Install Python Dependencies
-# Install MTCNN for face detection
-# Install Dlib for facial landmark detection
-# Install MobileNetV2 dependencies
+## 4. Install MTCNN for face detection
+## 5. Install Dlib for facial landmark detection
+## 6. Install MobileNetV2 dependencies
 
 ### 5. Clone Repository
 
@@ -64,7 +64,7 @@ Install JetPack SDK on Jetson Nano
 ├── requirements.txt  
 │  
 ├── DOC/  
-│   ├── A_Survey_on_State-of-the-Art_Drowsiness_Detection.pdf 
+│   ├── A_Survey_on_State-of-the-Art_Drowsiness_Detection.pdf   
 │   ├── Driver_Fatigue_Detection_System.pdf  
 │   ├── Driver_Fatigue_State_Detection.pdf  
 │   ├── Fatigue_Driving_Detection_Based.pdf  

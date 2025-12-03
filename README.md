@@ -58,45 +58,43 @@ Install JetPack SDK on Jetson Nano
 ### 5. Clone Repository
 
 ## Project Structure
- fatigue-detection/
-│
-├── README.md
-├── requirements.txt
-│
-├── DOC/
-│   ├── A_Survey_on_State-of-the-Art_Drowsiness_Detection.pdf
-│   ├── Driver_Fatigue_Detection_System.pdf
-│   ├── Driver_Fatigue_State_Detection.pdf
-│   ├── Fatigue_Driving_Detection_Based.pdf
-│   ├── LITERATURE_REVIEW (1).pdf
-│   ├── cv_review1_logbook.pdf
-│   ├── fatigue-driving-detection-based.pdf
-│   ├── implementation paper (1).pdf
-│   └── survey (1).pdf
-│
-├── Data/
-│   ├── mouth_closed_1/
-│   ├── mouth_closed_2/
-│   ├── mouth_open_1/
-│   ├── mouth_open_2/
-│   ├── dataset_link_1
-│   └── dataset_link_2
-│
-├── Results/
-│
-├── Src/
-│   ├── code/
-│   │   ├── blink_detector.py
-│   │   ├── camera_test.py
-│   │   ├── fatigue_detector.py
-│   │   └── train_mouth.py
-│   │
-│   └── models/
-│       ├── eye_model.h5
-│       └── mouth_model.h5
-│
-└── configs/
-    └── config.yaml
+ fatigue-detection/  
+│  
+├── README.md  
+├── requirements.txt  
+│  
+├── DOC/  
+│   ├── A_Survey_on_State-of-the-Art_Drowsiness_Detection.pdf 
+│   ├── Driver_Fatigue_Detection_System.pdf  
+│   ├── Driver_Fatigue_State_Detection.pdf  
+│   ├── Fatigue_Driving_Detection_Based.pdf  
+│   ├── LITERATURE_REVIEW (1).pdf  
+│   ├── cv_review1_logbook.pdf  
+│   ├── fatigue-driving-detection-based.pdf  
+│   ├── implementation paper (1).pdf  
+│   └── survey (1).pdf  
+│  
+├── Data/  
+│   ├── mouth_closed_1/  
+│   ├── mouth_closed_2/  
+│   ├── mouth_open_1/  
+│   ├── mouth_open_2/  
+│   ├── dataset_link_1  
+│   └── dataset_link_2  
+│  
+├── Results/  
+│  
+├── Src/  
+│   ├── code/  
+│   │   ├── blink_detector.py 
+│   │   ├── camera_test.py  
+│   │   ├── fatigue_detector.py  
+│   │   └── train_mouth.py  
+│   │  
+│   └── models/  
+│       ├── eye_model.h5  
+│       └── mouth_model.h5  
+   
  
 
 ## Usage

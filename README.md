@@ -159,12 +159,4 @@ This project is developed for academic purposes at NUST SEECS.
 
 For project-related queries:
 
-- **Haida Asif:** hasif.bee22seecs@seecs.edu.pk
-- **Aleesha Waqar:** awaqar.bee22seecs@seecs.edu.pk
-- **Ayesha Nahman:** anahman.bee22seecs@seecs.edu.pk
-
----
-
-**Course:** CS-477 Computer Vision (Fall 2025)  
-**Institution:** National University of Sciences and Technology (NUST)  
-**School:** Electrical Engineering and Computer Science (SEECS)
+ 

@@ -100,15 +100,11 @@ This project implements a non-invasive fatigue detection system that monitors dr
 - **cuDNN:** 8.0
 - **TensorRT:** 7.1 
 ```
-
-## Project Structure
-
-```
+Computer-Vision-based-approach-to-detect-fatigue-driving/
+│
 ├── README.md
 ├── requirements.txt
-├── .github/
-│   └── workflows/
-│       └── ci.yml
+├── ci.yml
 │
 ├── DOC/
 │   ├── A_Survey_on_State-of-the-Art_Drowsiness_Detection.pdf
@@ -133,22 +129,21 @@ This project implements a non-invasive fatigue detection system that monitors dr
 │   ├── detection_logs/
 │   └── visualizations/
 │
-├── Src/
-│   ├── code/
-│   │   ├── blink_detector.py
-│   │   ├── camera_test.py
-│   │   ├── fatigue_detector.py
-│   │   ├── train_mouth.py
-│   │   ├── ear_calculator.py
-│   │   ├── mar_calculator.py
-│   │   ├── head_pose_estimator.py
-│   │   └── utils.py
-│   │
-│   └── models/
-│       ├── eye_model.h5
-│       ├── mouth_model.h5
-│       └── shape_predictor_68_face_landmarks.dat
-```
+└── Src/
+    ├── code/
+    │   ├── blink_detector.py
+    │   ├── camera_test.py
+    │   ├── fatigue_detector.py
+    │   ├── train_mouth.py
+    │   ├── ear_calculator.py
+    │   ├── mar_calculator.py
+    │   ├── head_pose_estimator.py
+    │   └── utils.py
+    │
+    └── models/
+        ├── eye_model.h5
+        ├── mouth_model.h5
+        └── shape_predictor_68_face_landmarks.dat
 ## Dataset
 
 The system is trained on publicly available facial fatigue datasets:

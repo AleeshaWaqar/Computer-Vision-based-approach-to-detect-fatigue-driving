@@ -102,6 +102,51 @@ This project implements a non-invasive fatigue detection system that monitors dr
 ```
 
 ```
+Computer-Vision-based-approach-to-detect-fatigue-driving/
+│
+├── README.md
+├── requirements.txt
+├── ci.yml
+│
+├── DOC/
+│ ├── A_Survey_on_State-of-the-Art_Drowsiness_Detection.pdf
+│ ├── Driver_Fatigue_Detection_System.pdf
+│ ├── Driver_Fatigue_State_Detection.pdf
+│ ├── Fatigue_Driving_Detection_Based.pdf
+│ ├── LITERATURE_REVIEW.pdf
+│ ├── cv_review1_logbook.pdf
+│ ├── implementation_paper.pdf
+│ └── survey.pdf
+│
+├── Data/
+│ ├── mouth_closed_1/
+│ ├── mouth_closed_2/
+│ ├── mouth_open_1/
+│ ├── mouth_open_2/
+│ ├── dataset_link_1.txt
+│ └── dataset_link_2.txt
+│
+├── Results/
+│ ├── performance_metrics.json
+│ ├── detection_logs/
+│ └── visualizations/
+│
+└── Src/
+├── code/
+│ ├── blink_detector.py
+│ ├── camera_test.py
+│ ├── fatigue_detector.py
+│ ├── train_mouth.py
+│ ├── ear_calculator.py
+│ ├── mar_calculator.py
+│ ├── head_pose_estimator.py
+│ └── utils.py
+│
+└── models/
+├── eye_model.h5
+├── mouth_model.h5
+└── shape_predictor_68_face_landmarks.dat
+ 
 ## Dataset
 
 The system is trained on publicly available facial fatigue datasets:
@@ -170,4 +215,4 @@ For project-related queries:
 ---
 
 *Last Updated: December 2025*
-```
+

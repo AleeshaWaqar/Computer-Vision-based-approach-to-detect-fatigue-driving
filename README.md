@@ -100,4 +100,73 @@ This project implements a non-invasive fatigue detection system that monitors dr
 - **cuDNN:** 8.0
 - **TensorRT:** 7.1 
 ```
- 
+
+
+## Dataset
+
+The system is trained on publicly available facial fatigue datasets:
+
+### Eye State Dataset
+- **Source:** [Kaggle - Open/Closed Eyes Dataset](https://www.kaggle.com/datasets/sehriyarmemmedli/open-closed-eyes-dataset)
+
+### Yawn Dataset
+- **Source:** [Kaggle - Yawn Dataset](https://www.kaggle.com/datasets/davidvazquezcic/yawn-dataset)
+
+## Documentation
+
+- **Literature Review:** `DOC/LITERATURE_REVIEW.pdf`
+- **Project Logbook:** `DOC/cv_review1_logbook.pdf`
+- **Implementation Paper:** `DOC/implementation_paper.pdf`
+- **Survey Papers:** `DOC/survey.pdf`
+
+## Future Enhancements
+
+- Integration with vehicle CAN bus for speed-based threshold adjustment
+- Cloud-based data logging and analytics dashboard
+- Multi-driver recognition and personalized thresholds
+- Advanced head pose tracking with gimbal lock prevention
+- Integration with smartphone notifications
+- Support for thermal imaging in low-light conditions
+
+## License
+
+This project is developed for academic purposes at NUST SEECS under the supervision of Dr. Tauseef ur Rehman.
+
+## Acknowledgments
+
+- **Instructor:** Dr. Tauseef ur Rehman
+- **Lab Engineer:** Ms. Tehniyat Siddiqui
+- **Teaching Assistant:** Mr. Zahid
+- NVIDIA for Jetson Nano platform and development resources
+- Kaggle community for providing open-source datasets
+- Research papers and open-source implementations that guided this work
+
+## References
+
+1. Ramzan, M., Khan, H. U., et al. "A survey on state-of-the-art drowsiness detection techniques." *IEEE Access*, vol. 7, pp. 61904-61919, 2019.
+
+2. Sikander, G., & Anwar, S. "Driver fatigue detection systems: a review." *IEEE Transactions on Intelligent Transportation Systems*, vol. 20, no. 6, pp. 2339-2352, 2018.
+
+3. Jia, H., Xiao, Z., & Ji, P. "Fatigue driving detection based on deep learning and multi-index fusion." *IEEE Access*, vol. 9, pp. 147054-147062, 2021.
+
+4. Soukupová, T., & Čech, J. "Real-time eye blink detection using facial landmarks." *21st Computer Vision Winter Workshop*, 2016.
+
+5. Deng, W., & Wu, R. "Real-time driver drowsiness detection using facial features." *IEEE Access*, vol. 7, pp. 118727-118738, 2019.
+
+## Contact
+
+For project-related queries:
+- **Haida Asif:** hasif.bee22seecs@seecs.edu.pk
+- **Aleesha Waqar:** awaqar.bee22seecs@seecs.edu.pk
+- **Ayesha Nahman:** anahman.bee22seecs@seecs.edu.pk
+
+---
+
+**Course:** CS-477 Computer Vision (Fall 2025)  
+**Instructor:** Dr. Tauseef ur Rehman  
+**Institution:** National University of Sciences and Technology (NUST)  
+**School:** Electrical Engineering and Computer Science (SEECS)
+
+---
+
+*Last Updated: December 2025*

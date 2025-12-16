@@ -101,15 +101,14 @@ This project implements a non-invasive fatigue detection system that monitors dr
 - **TensorRT:** 7.1 
 ```
 
-```
-Computer-Vision-based-approach-to-detect-fatigue-driving/
-│
-├── README.md
-├── requirements.txt
-├── ci.yml
-│
-├── DOC/
-│ ├── A_Survey_on_State-of-the-Art_Drowsiness_Detection.pdf
+Computer-Vision-based-approach-to-detect-fatigue-driving/  
+│  
+├── README.md  
+├── requirements.txt  
+├── ci.yml  
+│  
+├── DOC/  
+│ ├── A_Survey_on_State-of-the-Art_Drowsiness_Detection.pdf  
 │ ├── Driver_Fatigue_Detection_System.pdf
 │ ├── Driver_Fatigue_State_Detection.pdf
 │ ├── Fatigue_Driving_Detection_Based.pdf
@@ -146,7 +145,7 @@ Computer-Vision-based-approach-to-detect-fatigue-driving/
 ├── eye_model.h5
 ├── mouth_model.h5
 └── shape_predictor_68_face_landmarks.dat
- 
+```
 ## Dataset
 
 The system is trained on publicly available facial fatigue datasets:

@@ -41,17 +41,14 @@ This project implements a non-invasive fatigue detection system that monitors dr
 4. **EAR (Eye Aspect Ratio)**
    - Geometric ratio measuring eye openness
    - Detects blinks and prolonged eye closures
-   - Formula: EAR = (||p2-p6|| + ||p3-p5||) / (2||p1-p4||)
 
 5. **PERCLOS (Percentage of Eye Closure)**
    - Temporal metric measuring percentage of time eyes remain closed
-   - Primary fatigue indicator recognized by transportation safety standards
-   - Threshold: PERCLOS > 80% indicates severe drowsiness
+   - Primary fatigue indicator recognized by transportation safety standards 
 
 6. **MAR (Mouth Aspect Ratio)**
    - Geometric ratio detecting mouth opening
-   - Works robustly across different lighting conditions
-   - Formula: MAR = (||p2-p8|| + ||p3-p7|| + ||p4-p6||) / (3||p1-p5||)
+   - Works robustly across different lighting conditions 
 
 ### Supporting Algorithms
 
@@ -101,53 +98,7 @@ This project implements a non-invasive fatigue detection system that monitors dr
 - **Python Version:** 3.6+
 - **CUDA:** 10.2
 - **cuDNN:** 8.0
-- **TensorRT:** 7.1
-
-## Installation
-
-### 1. Setup NVIDIA Jetson Nano
-
-Install JetPack SDK on Jetson Nano following [NVIDIA's official documentation](https://developer.nvidia.com/embedded/jetpack).
-
-### 2. Install System Dependencies
-
-```bash
-sudo apt-get update
-sudo apt-get install -y python3-pip python3-dev
-sudo apt-get install -y libhdf5-serial-dev hdf5-tools libhdf5-dev
-sudo apt-get install -y libatlas-base-dev gfortran
-```
-
-### 3. Install Python Dependencies
-
-```bash
-pip3 install numpy==1.23.5
-pip3 install opencv-python==4.8.0
-pip3 install tensorflow==2.12.0
-pip3 install mediapipe
-pip3 install mtcnn
-pip3 install Pillow
-pip3 install scipy
-```
-
-### 4. Install Additional Libraries
-
-```bash
-# For face detection
-pip3 install mtcnn
-
-# For facial landmark detection
-pip3 install dlib
-
-# For MediaPipe integration
-pip3 install mediapipe
-```
-
-### 5. Clone Repository
-
-```bash
-git clone https://github.com/AleeshaWaqar/Computer-Vision-based-approach-to-detect-fatigue-driving.git
-cd Computer-Vision-based-approach-to-detect-fatigue-driving
+- **TensorRT:** 7.1 
 ```
 
 ## Project Structure
@@ -198,180 +149,15 @@ cd Computer-Vision-based-approach-to-detect-fatigue-driving
 │       ├── mouth_model.h5
 │       └── shape_predictor_68_face_landmarks.dat
 ```
-
-## Usage
-
-### Training Mode
-
-Train the eye state classifier:
-
-```bash
-python3 Src/code/train_eye.py --dataset Data/eyes/ --epochs 50 --batch_size 32
-```
-
-Train the mouth/yawn detector:
-
-```bash
-python3 Src/code/train_mouth.py --dataset Data/mouth/ --epochs 50 --batch_size 32
-```
-
-### Inference Mode
-
-#### 1. Desktop/Development Environment
-
-Run fatigue detection on video file:
-
-```bash
-python3 Src/code/fatigue_detector.py --video test_video.mp4 --output Results/
-```
-
-Run fatigue detection with webcam:
-
-```bash
-python3 Src/code/fatigue_detector.py --source 0
-```
-
-#### 2. Real-time Detection (Jetson Nano)
-
-Run real-time fatigue detection with CSI camera:
-
-```bash
-python3 Src/code/fatigue_detector.py --source csi --width 1280 --height 720
-```
-
-Run with USB webcam:
-
-```bash
-python3 Src/code/fatigue_detector.py --source usb --device 0
-```
-
-### Camera Testing
-
-Test CSI camera on Jetson Nano:
-
-```bash
-python3 Src/code/camera_test.py --camera csi
-```
-
-Test USB webcam:
-
-```bash
-python3 Src/code/camera_test.py --camera usb --device 0
-```
-
-### Algorithm Configuration
-
-Modify detection thresholds in `config.py`:
-
-```python
-# Eye Aspect Ratio threshold
-EAR_THRESHOLD = 0.25
-EAR_CONSECUTIVE_FRAMES = 3
-
-# PERCLOS threshold (percentage)
-PERCLOS_THRESHOLD = 80
-
-# Mouth Aspect Ratio threshold
-MAR_THRESHOLD = 0.6
-YAWN_CONSECUTIVE_FRAMES = 20
-
-# Head pose thresholds (degrees)
-PITCH_THRESHOLD = 15
-YAW_THRESHOLD = 20
-ROLL_THRESHOLD = 15
-```
-
 ## Dataset
 
 The system is trained on publicly available facial fatigue datasets:
 
 ### Eye State Dataset
 - **Source:** [Kaggle - Open/Closed Eyes Dataset](https://www.kaggle.com/datasets/sehriyarmemmedli/open-closed-eyes-dataset)
-- **Size:** 4,000+ images
-- **Classes:** Open eyes, Closed eyes
 
 ### Yawn Dataset
 - **Source:** [Kaggle - Yawn Dataset](https://www.kaggle.com/datasets/davidvazquezcic/yawn-dataset)
-- **Size:** 3,000+ images
-- **Classes:** Yawn, No yawn
-
-### Additional Data
-- Custom collected video sequences from real driving scenarios
-- Augmented data with varying lighting conditions
-- Multi-ethnic facial expressions for robust generalization
-
-## Performance Metrics
-
-| Metric | Value |
-|--------|-------|
-| Face Detection Accuracy | 98.5% |
-| Eye State Classification | 96.2% |
-| Yawn Detection Accuracy | 94.8% |
-| False Positive Rate | 3.1% |
-| Average Inference Time (Jetson Nano) | 45ms/frame |
-| PERCLOS Calculation Accuracy | 97.3% |
-
-## Troubleshooting
-
-### Common Issues
-
-**Issue 1: CUDA Out of Memory**
-- **Solution:** Reduce batch size or input image resolution
-- **Command:** Use `--batch_size 16` or `--resize 0.5` flags
-
-**Issue 2: Camera Not Detected**
-- **Solution:** Check camera connection and permissions
-- **Commands:**
-  ```bash
-  ls /dev/video*
-  sudo usermod -a -G video $USER
-  ```
-
-**Issue 3: Slow Inference Speed**
-- **Solution:** Enable TensorRT optimization or reduce input resolution
-- **See:** Model Optimization section below
-
-**Issue 4: Low Detection Accuracy**
-- **Solution:** Improve lighting conditions, recalibrate thresholds, or retrain with domain-specific data
-- **Adjust:** EAR_THRESHOLD, MAR_THRESHOLD in configuration
-
-**Issue 5: MediaPipe Import Error**
-- **Solution:** Ensure compatible version installed
-- **Command:**
-  ```bash
-  pip3 install --upgrade mediapipe
-  ```
-
-**Issue 6: TensorFlow GPU Not Detected**
-- **Solution:** Verify CUDA and cuDNN installation
-- **Check:**
-  ```python
-  import tensorflow as tf
-  print(tf.config.list_physical_devices('GPU'))
-  ```
-
-## Model Optimization
-
-### TensorRT Conversion
-
-Convert trained models to TensorRT for faster inference on Jetson Nano:
-
-```bash
-python3 Src/code/convert_to_tensorrt.py \
-  --model Src/models/eye_model.h5 \
-  --output Src/models/eye_model.trt \
-  --precision FP16
-```
-
-### Quantization
-
-Apply post-training quantization for reduced model size:
-
-```bash
-python3 Src/code/quantize_model.py \
-  --model Src/models/mouth_model.h5 \
-  --output Src/models/mouth_model_quantized.tflite
-```
 
 ## Documentation
 
@@ -382,26 +168,13 @@ python3 Src/code/quantize_model.py \
 
 ## Future Enhancements
 
-- [ ] Integration with vehicle CAN bus for speed-based threshold adjustment
-- [ ] Cloud-based data logging and analytics dashboard
-- [ ] Multi-driver recognition and personalized thresholds
-- [ ] Advanced head pose tracking with gimbal lock prevention
-- [ ] Integration with smartphone notifications
-- [ ] Support for thermal imaging in low-light conditions
+- Integration with vehicle CAN bus for speed-based threshold adjustment
+- Cloud-based data logging and analytics dashboard
+- Multi-driver recognition and personalized thresholds
+- Advanced head pose tracking with gimbal lock prevention
+- Integration with smartphone notifications
+- Support for thermal imaging in low-light conditions
 
-## Citation
-
-If you use this project in your research, please cite:
-
-```bibtex
-@misc{fatigue_detection_2025,
-  title={Computer-Vision-based Approach to Detect Fatigue Driving},
-  author={Asif, Haida and Waqar, Aleesha and Nahman, Ayesha},
-  year={2025},
-  institution={National University of Sciences and Technology (NUST)},
-  course={CS-477 Computer Vision}
-}
-```
 
 ## License
 

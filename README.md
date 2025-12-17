@@ -1,9 +1,6 @@
 ![CI Tests](https://github.com/AleeshaWaqar/Computer-Vision-based-approach-to-detect-fatigue-driving/workflows/Fatigue%20Detection%20CI/badge.svg)
 ![Platform](https://img.shields.io/badge/Platform-NVIDIA%20Jetson%20Nano-76B900?style=flat&logo=nvidia)
-![Python](https://img.shields.io/badge/Python-3.7%20%7C%203.8%20%7C%203.9-3776AB?style=flat&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-In%20Development-yellow?style=flat)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.4%2B-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.5%2B-5C3EE8?style=flat&logo=opencv)
 ![License](https://img.shields.io/badge/License-Academic-blue?style=flat)
 ![NUST](https://img.shields.io/badge/Institution-NUST%20SEECS-green?style=flat)
 

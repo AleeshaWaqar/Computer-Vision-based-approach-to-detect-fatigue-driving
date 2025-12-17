@@ -1,36 +1,15 @@
-# Core dependencies for Fatigue Detection System
+# Fatigue Detection System - Core Dependencies
 
-# Deep Learning Frameworks
-tensorflow>=2.4.0,<2.12.0
-keras>=2.4.0,<2.12.0
+# Basic scientific computing
+numpy>=1.23.5
+cv2>=4.8.0
 
-# Computer Vision
-opencv-python>=4.5.0
-opencv-contrib-python>=4.5.0
-dlib>=19.21.0
-imutils>=0.5.4
+# Computer vision (will be installed on Jetson Nano)
+# opencv-python>=4.5.0
 
-# Scientific Computing
-numpy>=1.19.0,<1.24.0
-scipy>=1.5.0
-scikit-learn>=0.24.0
+# Deep learning (will be installed on Jetson Nano)
+# tensorflow>=2.12.0
+# keras>=2.4.0
 
-# Image Processing
-pillow>=8.0.0
-
-# MTCNN for face detection
-mtcnn>=0.1.1
-
-# Utilities
-matplotlib>=3.3.0
-pandas>=1.1.0
-
-# For Jetson Nano optimization (optional)
-# onnxruntime-gpu>=1.8.0
-# pycuda>=2021.1
-
-# Development and Testing
+# Testing
 pytest>=6.2.0
-pytest-cov>=2.12.0
-flake8>=3.9.0
-black>=21.0

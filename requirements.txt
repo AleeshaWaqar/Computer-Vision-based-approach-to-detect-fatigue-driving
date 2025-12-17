@@ -1,10 +1,36 @@
-tensorflow==2.8.0
-opencv-python==4.5.5.64
-numpy==1.22.3
-mtcnn==0.1.1
-scipy==1.8.0
-imutils==0.5.4
-keras==2.8.0
-pytest==7.2.0
-pytest-cov==4.0.0
-flake8==6.0.0
+# Core dependencies for Fatigue Detection System
+
+# Deep Learning Frameworks
+tensorflow>=2.4.0,<2.12.0
+keras>=2.4.0,<2.12.0
+
+# Computer Vision
+opencv-python>=4.5.0
+opencv-contrib-python>=4.5.0
+dlib>=19.21.0
+imutils>=0.5.4
+
+# Scientific Computing
+numpy>=1.19.0,<1.24.0
+scipy>=1.5.0
+scikit-learn>=0.24.0
+
+# Image Processing
+pillow>=8.0.0
+
+# MTCNN for face detection
+mtcnn>=0.1.1
+
+# Utilities
+matplotlib>=3.3.0
+pandas>=1.1.0
+
+# For Jetson Nano optimization (optional)
+# onnxruntime-gpu>=1.8.0
+# pycuda>=2021.1
+
+# Development and Testing
+pytest>=6.2.0
+pytest-cov>=2.12.0
+flake8>=3.9.0
+black>=21.0

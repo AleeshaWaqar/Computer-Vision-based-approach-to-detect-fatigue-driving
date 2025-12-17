@@ -2,7 +2,7 @@
 ![Platform](https://img.shields.io/badge/Platform-NVIDIA%20Jetson%20Nano-76B900?style=flat&logo=nvidia)
 ![Status](https://img.shields.io/badge/Status-In%20Development-yellow?style=flat)
 ![License](https://img.shields.io/badge/License-Academic-blue?style=flat)
-![NUST](https://img.shields.io/badge/Institution-NUST%20SEECS-green?style=flat)
+![Institution](https://img.shields.io/badge/Institution-NUST%20SEECS-green?style=flat)
 
 # Computer-Vision-based Approach to Detect Fatigue Driving
 

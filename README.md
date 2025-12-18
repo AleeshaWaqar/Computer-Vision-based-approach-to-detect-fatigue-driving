@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/License-Academic-blue?style=flat)
 ![Institution](https://img.shields.io/badge/Institution-NUST%20SEECS-green?style=flat)
 
-# Computer-Vision-based Approach to Detect Fatigue Driving
+# Computer-Vision-based Approach to Detect Fatigue  
 
 A real-time driver fatigue detection system implemented on NVIDIA Jetson Nano using deep learning and computer vision techniques.
 
